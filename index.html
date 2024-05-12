@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab2</title>
+    <style>
+        body {
+    background: url(https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/bg-register.jpg) no-repeat center center;
+    background-size: 200%;
+}
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body style="font-family: 'Segoe UI', Tahoma, sans-serif; font-size: 75%">
+    <img src="https://caodang.fpt.edu.vn/wp-content/themes/fpoly/assets-custom/images/Banner.png" width="100%">
+    <h2 class="py-3 mt-4 text-center" style="color:#2e3192; font-weight: bold; font-size: 300%;">PHIẾU ĐĂNG KÝ HỌC</h2>
+    <div class="container-fluid">
+        <form method="post" class="bg-white p-5 m-4" style="border-radius: 5px;">
+            <h5 style="color:#2e3192; font-weight:bold"><i class="bi bi-square-fill" style="color:#fc8305"></i> THÔNG TIN THÍ SINH</h5>
+            <div class="row">
+                <div class="col">
+                    <span>Họ và tên</span>
+                    <input type="text" class="form-control" placeholder="Họ và tên">
+                </div>
+                <div class="col">
+                    <span>Ngày sinh</span>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="col">
+                    <span>Giới tính</span>
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Nam</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>                          
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item">Nam</a></li>
+                            <li><a class="dropdown-item">Nữ</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <span>Dân tộc</span>
+                    <input type="text" class="form-control" placeholder="Kinh">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>Số CCCD/Chứng minh nhân dân</span>
+                    <input type="text" class="form-control" placeholder="0123456789">
+                </div>
+                <div class="col">
+                    <span>Ngày cấp</span>
+                    <input type="text" class="form-control" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="col">
+                    <span>Nơi cấp</span>
+                    <input type="text" class="form-control" placeholder="Hà Nội, Hồ Chí Minh,…">
+                </div>
+            </div>
+            <h6>Nơi thường trú (Điền thông tin đầy đủ như trong CMND/CCCD)</h6>
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <span class="me-auto">Chọn tỉnh/thành phố</span>
+                          <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12" style="max-height: 515px; overflow-y: auto;"> 
+                            <li><a class="dropdown-item py-0">Chọn tỉnh/thành phố</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hà Nội</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Cao Bằng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Kạn</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tuyên Quang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lào Cai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Điện Biên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lai Châu</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Sơn La</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Yên Bái</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hòa Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thái Nguyên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lạng Sơn</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ninh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Phú Thọ</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Vĩnh Phúc</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Ninh </a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hải Dương</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hải Phòng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hưng Yên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thái Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Nam</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Nam Định</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Ninh bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thanh Hóa</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Nghệ An</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Tĩnh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Trị</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thừa Thiên Huế</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Đà Nẵng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Nam</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ngãi</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Định</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Phú Yên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Khánh Hòa</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Ninh Thuận</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Thuận</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ngãi</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Kon Tum</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Gia Lai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đăk Lắc</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đăk Nông</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lâm Đồng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tây Ninh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Dương</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đồng Nai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bà Rịa - Vũng Tàu</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Long An</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tiền Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bến Tre</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Trà Vinh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Vĩnh Long</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đồng Tháp</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh An Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Kiên Giang</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Cần Thơ</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hậu Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Sóc Trăng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bạc Liêu</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Cà Mau</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Quận/Huyện</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Quận/Huyện</a></li>
+                            <li><a class="dropdown-item py-0">Hà Nội</a></li>
+                            <li><a class="dropdown-item py-0">TP. Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item py-0">Đà Nẵng</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Xã/Phường/Thị Trán</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Xã/Phường/Thị Trán</a></li>
+                            <li><a class="dropdown-item py-0">Hà Nội</a></li>
+                            <li><a class="dropdown-item py-0">TP. Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item py-0">Đà Nẵng</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <input type="text" class="form-control" placeholder="Số nhà, đường, ngõ, xóm">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>Số điện thoại thí sinh</span>
+                    <input type="text" class="form-control" placeholder="0987654321">
+                </div>
+                <div class="col">
+                    <span>Email thí sinh<b class="text-danger">*</b></span>
+                    <input type="text" class="form-control" placeholder="example@gmail.com">
+                </div>
+                <div class="col">
+                    <span>Họ tên phụ huynh/người bảo trợ</span>
+                    <input type="text" class="form-control" placeholder="Họ và tên">
+                </div>
+                <div class="col">
+                    <span>Số điện thoại phụ huynh/người bảo trợ</span>
+                    <input type="text" class="form-control" placeholder="0987654321">
+                </div>
+            </div>
+            <h5 style="color:#2e3192; font-weight:bold"><i class="bi bi-square-fill" style="color:#fc8305"></i> THÔNG TIN ĐĂNG KÝ TRƯỜNG CAO ĐẲNG FPT POLYTECHNIC</h5>
+            <div class="row">
+                <div class="col-6">
+                    <span>Cơ sở nhạp học</span>
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Hà Nội</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Hà Nội</a></li>
+                            <li><a class="dropdown-item py-0">Hải Phòng</a></li>
+                            <li><a class="dropdown-item py-0">Hà Nam</a></li>
+                            <li><a class="dropdown-item py-0">Thanh Hóa</a></li>
+                            <li><a class="dropdown-item py-0">TP. Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item py-0">Quy Nhơn</a></li>
+                            <li><a class="dropdown-item py-0">Đà Nẵng</a></li>
+                            <li><a class="dropdown-item py-0">Tây Nguyên</a></li>
+                            <li><a class="dropdown-item py-0">Cần Thơ</a></li>
+                            <li><a class="dropdown-item py-0">Thái Nguyên</a></li>
+                            <li><a class="dropdown-item py-0">Đồng Nai</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <span>Nguyện vọng thứ nhất</span>
+                <span>Nguyện vòng thứ hai</span>
+                <div class="col-3">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Chuyên Ngành</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                          <li><a class="dropdown-item py-0">Chuyên Ngành</a></li>
+                          <li><a class="dropdown-item py-0">Phát triền phần mềm</a></li>
+                          <li><a class="dropdown-item py-0">Lập trình Web</a></li>
+                          <li><a class="dropdown-item py-0">Lập trình Mobile</a></li>
+                          <li><a class="dropdown-item py-0">Ứng dụng phần mềm</a></li>
+                          <li><a class="dropdown-item py-0">Xứ lý dữ liệu</a></li>
+                          <li><a class="dropdown-item py-0">Lập trình Game</a></li>
+                          <li><a class="dropdown-item py-0">Digital Marketing</a></li>
+                          <li><a class="dropdown-item py-0">Marketing & sale</a></li>
+                          <li><a class="dropdown-item py-0">Truyền thông & Tổ chức sự kiện</a></li>
+                          <li><a class="dropdown-item py-0">Quản trị khách sạn - Nhà Hàng</a></li>
+                          <li><a class="dropdown-item py-0">Quản trị Dịch vụ du lịch & Lữ Hành</a></li>
+                          <li><a class="dropdown-item py-0">Logistics</a></li>
+                          <li><a class="dropdown-item py-0">Công nghệ kỹ thuật điện, địên tử</a></li>
+                          <li><a class="dropdown-item py-0">CN kỹ thuật điều khiển & tư động hóa</a></li>
+                          <li><a class="dropdown-item py-0">Công nghệ kỹ thuật cơ khí</a></li>
+                          <li><a class="dropdown-item py-0">Thiết ké đồ họa</a></li>
+                          <li><a class="dropdown-item py-0">Dược (dự kiến)</a></li>
+                          <li><a class="dropdown-item py-0">Chip & Bán dẫn (dự kiến)</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Ngành</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Chuyên Ngành</a></li>
+                            <li><a class="dropdown-item py-0">Công nghệ thông tin</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Chuyên Ngành</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Chuyên Ngành</a></li>
+                            <li><a class="dropdown-item py-0">Phát triền phần mềm</a></li>
+                            <li><a class="dropdown-item py-0">Lập trình Web</a></li>
+                            <li><a class="dropdown-item py-0">Lập trình Mobile</a></li>
+                            <li><a class="dropdown-item py-0">Ứng dụng phần mềm</a></li>
+                            <li><a class="dropdown-item py-0">Xứ lý dữ liệu</a></li>
+                            <li><a class="dropdown-item py-0">Lập trình Game</a></li>
+                            <li><a class="dropdown-item py-0">Digital Marketing</a></li>
+                            <li><a class="dropdown-item py-0">Marketing & sale</a></li>
+                            <li><a class="dropdown-item py-0">Truyền thông & Tổ chức sự kiện</a></li>
+                            <li><a class="dropdown-item py-0">Quản trị khách sạn - Nhà Hàng</a></li>
+                            <li><a class="dropdown-item py-0">Quản trị Dịch vụ du lịch & Lữ Hành</a></li>
+                            <li><a class="dropdown-item py-0">Logistics</a></li>
+                            <li><a class="dropdown-item py-0">Công nghệ kỹ thuật điện, địên tử</a></li>
+                            <li><a class="dropdown-item py-0">CN kỹ thuật điều khiển & tư động hóa</a></li>
+                            <li><a class="dropdown-item py-0">Công nghệ kỹ thuật cơ khí</a></li>
+                            <li><a class="dropdown-item py-0">Thiết ké đồ họa</a></li>
+                            <li><a class="dropdown-item py-0">Dược (dự kiến)</a></li>
+                            <li><a class="dropdown-item py-0">Chip & Bán dẫn (dự kiến)</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col-3">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Ngành</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Chuyên Ngành</a></li>
+                            <li><a class="dropdown-item py-0">Công nghệ thông tin</a></li>
+                          </ul>
+                      </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <span>Năm tốt nghiệp THPT hoặc tương đương</span>
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">2024</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">2024</a></li>
+                            <li><a class="dropdown-item py-0">2023</a></li>
+                            <li><a class="dropdown-item py-0">2022</a></li>
+                            <li><a class="dropdown-item py-0">2021</a></li>
+                            <li><a class="dropdown-item py-0">2020</a></li>
+                            <li><a class="dropdown-item py-0">2019</a></li>
+                            <li><a class="dropdown-item py-0">2018</a></li>
+                            <li><a class="dropdown-item py-0">2017</a></li>
+                            <li><a class="dropdown-item py-0">2016</a></li>
+                            <li><a class="dropdown-item py-0">2015</a></li>
+                            <li><a class="dropdown-item py-0">2014</a></li>
+                            <li><a class="dropdown-item py-0">2013</a></li>
+                            <li><a class="dropdown-item py-0">2012</a></li>
+                          </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <span>Trường tốt nghiệp THPT hoặc tương đương</span>
+                    <input type="text" class="form-control" placeholder="Trường">
+                </div>
+            </div>
+            <h6>Nơi tốt nghiệp</h6>
+            <div class="row">
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Chọn tỉnh/thành phố</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12" style="max-height: 515px; overflow-y: auto;"> 
+                            <li><a class="dropdown-item py-0">Chọn tỉnh/thành phố</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hà Nội</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Cao Bằng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Kạn</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tuyên Quang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lào Cai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Điện Biên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lai Châu</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Sơn La</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Yên Bái</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hòa Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thái Nguyên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lạng Sơn</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ninh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Phú Thọ</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Vĩnh Phúc</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bắc Ninh </a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hải Dương</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hải Phòng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hưng Yên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thái Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Nam</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Nam Định</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Ninh bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thanh Hóa</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Nghệ An</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hà Tĩnh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Bình</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Trị</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Thừa Thiên Huế</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Đà Nẵng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Nam</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ngãi</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Định</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Phú Yên</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Khánh Hòa</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Ninh Thuận</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Thuận</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Quảng Ngãi</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Kon Tum</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Gia Lai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đăk Lắc</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đăk Nông</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Lâm Đồng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tây Ninh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bình Dương</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đồng Nai</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bà Rịa - Vũng Tàu</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Hồ Chí Minh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Long An</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Tiền Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bến Tre</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Trà Vinh</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Vĩnh Long</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Đồng Tháp</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh An Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Kiên Giang</a></li>
+                            <li><a class="dropdown-item py-0">Thành Phố Cần Thơ</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Hậu Giang</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Sóc Trăng</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Bạc Liêu</a></li>
+                            <li><a class="dropdown-item py-0">Tỉnh Cà Mau</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Quận/Huyện</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Quận/Huyện</a></li>
+                            <li><a class="dropdown-item py-0">First Choice</a></li>
+                            <li><a class="dropdown-item py-0">Second Choice</a></li>
+                            <li><a class="dropdown-item py-0">Third Choice</a></li>
+                        </ul>
+                      </div>
+                </div>
+                <div class="col">
+                    <div class="dropdown">
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Phường/Xã/THị Trấn</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Phường/Xã/THị Trấn</a></li>
+                            <li><a class="dropdown-item py-0">First Choice</a></li>
+                            <li><a class="dropdown-item py-0">Second Choice</a></li>
+                            <li><a class="dropdown-item py-0">Third Choice</a></li>
+                        </ul>
+                      </div>
+                </div>
+            </div>
+            <h5 style="color:#2e3192; font-weight: bold;"><i class="bi bi-square-fill" style="color:#fc8305"></i> THÔNG TIN NHẬN GIẤY BÁO KẾT QUẢ</h5>
+            <div class="row">
+                <div class="col">
+                    <span>Người Nhận</span><br>
+                    <input type="checkbox"><span> Thí sinh</span><br>
+                    <input type="checkbox"><span> Phụ huynh/Người bảo trợ</span>
+                </div>
+                <div class="col">
+                    <span>Địa chỉ Nhận</span><br>
+                    <input type="checkbox"><span> Địa chỉ thường trú</span><br>
+                    <input type="checkbox"><span> Khác</span>
+                </div>
+            </div>
+            <h5 style="color:#2e3192; font-weight: bold;"><i class="bi bi-square-fill" style="color:#fc8305"></i> TẢI LÊN GIẤY TỜ XÁC THỰC HỒ SƠ ĐĂNG KÝ HỌC</h5>
+            <div class="row">
+                <div class="col-3">
+                    <span><b>Ảnh CMND/CCCD mặt trước</b><br><span class="text-body-tertiary">(bắt buộc)</span></span>
+                    <br>
+                    <img src="img/cccd-mt.png" width="100%">
+                    <input type="file" class="p-2">
+                </div>
+                <div class="col-3">
+                    <span><b>Ảnh CMND/CCCD mặt sau</b><br><span class="text-body-tertiary">(bắt buộc)</span></span>
+                    <br>
+                    <img src="img/cccd-ms.png" width="100%"><br>
+                    <input type="file" class="p-2">
+                </div>
+                <div class="col-6">
+                    <span><b>Bản sao công chứng Bằng tốt nghiệp THPT</b><br><span class="text-body-tertiary">Hoặc giấy chứng nhận tốt nghiệp tạm thời (không bắt buộc)</span></span>
+                    <br>
+                    <img src="/img/bang-tot-nghiep-thpt.webp" width="102.5%"><br>
+                    <input type="file" class="p-2">
+                </div>
+            </div>
+            <h5 style="color:#2e3192; font-weight: bold;"><i class="bi bi-square-fill" style="color:#fc8305"></i> TẢI LÊN GIẤY TỜ ĐĂNG KÝ HỒ SƠ XÉT TUYỂN HỌC BỔNG</h5>
+            <p>
+                Nhằm khuyến khích những bạn trẻ đam mê học tập. Tạo điều kiện thuận lợi cho các bạn học sinh, sinh viên tiếp cận chương trình đào tạo chất lượng, xây dựng nghề nghiệp vững chắc. 
+                <b>Trường Cao đẳng FPT Polytechnic triển khai Học bổng Thắp sáng tương lai với tổng trị giá lên đến 80 tỷ VNĐ.</b>
+            </p>
+            <p>
+                <b>Nhập điểm trung bình của 01 trong 06 môn lớp 11 hoặc 12 (Toán, Tin học, Tiếng Anh, Hội hoạ, Âm nhạc) để xem mức ưu đãi và học bổng bạn sẽ đạt được:</b>
+            </p>
+            <div class="row">
+                <div class="col-6">
+                    <div class="dropdown">
+                        <span>Thông tin môn Toán</span>
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Toán</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Toán</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <span>Nhập điểm học bạ (Lớp 11 hoặc 12)</span>
+                    <input type="number" class="form-control">
+                    <span>Điểm số từ 0 đến 10 gồm cả số thập phân</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="dropdown">
+                        <span>Thông tin môn Tin học</span>
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Tin học</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Tin học</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <span>Nhập điểm học bạ (Lớp 11 hoặc 12)</span>
+                    <input type="number" class="form-control">
+                    <span>Điểm số từ 0 đến 10 gồm cả số thập phân</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="dropdown">
+                        <span>Thông tin môn Tiếng Anh</span>
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Tiếng Anh</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Tiếng Anh</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <span>Nhập điểm học bạ (Lớp 11 hoặc 12)</span>
+                    <input type="number" class="form-control">
+                    <span>Điểm số từ 0 đến 10 gồm cả số thập phân</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <div class="dropdown">
+                        <span>Thông tin môn Năng khiếu</span>
+                        <button class="btn border-secondary-subtle bg-white d-flex justify-content-end align-items-center col-12" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="me-auto">Chọn Môn</span>
+                            <img src="img/angle_double_down_flat_icon_sign_6919159.png" width="2.5%">
+                        </button>
+                        <ul class="dropdown-menu col-12">
+                            <li><a class="dropdown-item py-0">Chọn Môn</a></li>
+                            <li><a class="dropdown-item py-0">Hội Họa</a></li>
+                            <li><a class="dropdown-item py-0">Âm Nhạc</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-3">
+                    <span>Nhập điểm học bạ (Lớp 11 hoặc 12)</span>
+                    <input type="number" class="form-control">
+                    <span>Điểm số từ 0 đến 10 gồm cả số thập phân</span>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-6">
+                    <span><b>Ảnh học bạ lớp 11, hoặc lớp 12</b><br><span class="text-body-tertiary">(bắt buộc khi tham gia chương trình học bổng)</span></span>
+                    <br>
+                    <img src="img/anh-minh-hoa-hoc-ba-9464-1.webp" width="100%"><br>
+                    <input type="file" class="pt-2"><br>
+                    <i>Tải 1 hoặc nhiều files (tối đa 3 files)</i>
+                </div>
+                <div class="col-6">
+                    <span><b>Ảnh bằng khen, hoặc chứng chỉ, hoặc chứng nhận các thành tích đạt được</b><br><span class="text-body-tertiary">(nếu có)</span></span>
+                    <br>
+                    <img src="/img/chungnhan2.webp" width="87%"><br>
+                    <input type="file" class="pt-2"><br>
+                    <i>Tải 1 hoặc nhiều files (tối đa 3 files)</i>
+                </div>
+            </div>
+            <b>Lưu ý:</b><br>
+            <p class="ps-4">
+                Học bổng/ưu đãi tính theo mức học phí thực tế của cơ sở mà sinh viên theo học.
+                Trường hợp sinh viên chuyển giữa các cơ sở vẫn được hưởng chính sách này, tính theo mức học phí của cơ sở mà sinh viên chuyển đến.
+                Trường hợp học phí có sự điều chỉnh (tăng hoặc giảm) thì học bổng/ưu đãi khi đó tính theo mức học phí sau điều chỉnh.
+                Học bổng/ưu đãi sẽ được khấu trừ trực tiếp vào các lần đóng học phí (Không bao gồm phí học lại).
+                Học bổng/ưu đãi không bao gồm các khoản phí và lệ phí khác ngoài học phí.
+                Các loại học bổng/ưu đãi trên là đích danh, không thể chuyển nhượng cho người khác và không có giá trị quy đổi thành tiền.
+                Trường hợp thí sinh thuộc diện được cấp nhiều loại học bổng và ưu đãi thì chỉ được chọn 01 loại học bổng/ưu đãi có giá trị lớn nhất.
+            </p>
+            <p>
+                <input type="checkbox">
+                Tôi xin cam đoan những lời khai của tôi trên phiếu đăng ký này là đúng sự thật. Nếu sai tôi hoàn toàn chịu trách nhiệm và nhận xử lý theo 
+                <a href="#" class="link-offset-2 link-underline link-underline-opacity-0">Quy chế tuyển sinh</a>
+                cao đẳng hiện hành
+            </p>
+            <p>
+                <input type="checkbox">
+                Tôi đã đọc kỹ và cam kết tuân thủ Quy định tài chính của nhà trường
+            </p>
+            <button class="d-grid mx-auto p-3 btn btn-dark">GỬI HỒ SƠ ĐĂNG KÝ</button>
+        </form>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</body>
+</html>
